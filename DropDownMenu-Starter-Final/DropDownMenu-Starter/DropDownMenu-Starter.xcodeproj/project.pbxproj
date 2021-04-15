@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3740D3482627F3BE007452AB /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D3472627F3BE007452AB /* Color+Ext.swift */; };
+		3740D34B2627F3DB007452AB /* SmoothRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D34A2627F3DB007452AB /* SmoothRoundedCorners.swift */; };
 		3765C7452611928F00E51D21 /* DropDownMenu_StarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765C7442611928F00E51D21 /* DropDownMenu_StarterApp.swift */; };
 		3765C7472611928F00E51D21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765C7462611928F00E51D21 /* ContentView.swift */; };
 		3765C7492611929100E51D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3765C7482611929100E51D21 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3740D3472627F3BE007452AB /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		3740D34A2627F3DB007452AB /* SmoothRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothRoundedCorners.swift; sourceTree = "<group>"; };
 		3765C7412611928F00E51D21 /* DropDownMenu-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DropDownMenu-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3765C7442611928F00E51D21 /* DropDownMenu_StarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu_StarterApp.swift; sourceTree = "<group>"; };
 		3765C7462611928F00E51D21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3740D3412627EFFB007452AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3740D34A2627F3DB007452AB /* SmoothRoundedCorners.swift */,
+				3740D3472627F3BE007452AB /* Color+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3740D3422627F005007452AB /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		3740D3432627F015007452AB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3765C7462611928F00E51D21 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3740D3442627F025007452AB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3765C7442611928F00E51D21 /* DropDownMenu_StarterApp.swift */,
+				3765C74D2611929100E51D21 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		3765C7382611928F00E51D21 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +89,11 @@
 		3765C7432611928F00E51D21 /* DropDownMenu-Starter */ = {
 			isa = PBXGroup;
 			children = (
-				3765C7442611928F00E51D21 /* DropDownMenu_StarterApp.swift */,
-				3765C7462611928F00E51D21 /* ContentView.swift */,
+				3740D3432627F015007452AB /* Screens */,
+				3740D3422627F005007452AB /* DropDownMenu */,
+				3740D3412627EFFB007452AB /* Helpers */,
+				3740D3442627F025007452AB /* App */,
 				3765C7482611929100E51D21 /* Assets.xcassets */,
-				3765C74D2611929100E51D21 /* Info.plist */,
 				3765C74A2611929100E51D21 /* Preview Content */,
 			);
 			path = "DropDownMenu-Starter";
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3740D34B2627F3DB007452AB /* SmoothRoundedCorners.swift in Sources */,
 				3765C7472611928F00E51D21 /* ContentView.swift in Sources */,
 				3765C7452611928F00E51D21 /* DropDownMenu_StarterApp.swift in Sources */,
+				3740D3482627F3BE007452AB /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DropDownMenu-Starter/Preview Content\"";
 				DEVELOPMENT_TEAM = D6VB3396MT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "DropDownMenu-Starter/Info.plist";
+				INFOPLIST_FILE = "DropDownMenu-Starter/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DropDownMenu-Starter/Preview Content\"";
 				DEVELOPMENT_TEAM = D6VB3396MT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "DropDownMenu-Starter/Info.plist";
+				INFOPLIST_FILE = "DropDownMenu-Starter/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

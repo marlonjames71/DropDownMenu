@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3740D3572627F58B007452AB /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D3562627F58B007452AB /* Color+Ext.swift */; };
+		3740D35A2627F5A2007452AB /* SmoothRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D3592627F5A1007452AB /* SmoothRoundedCorners.swift */; };
 		3765C7612611930E00E51D21 /* DropDownMenu_FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765C7602611930E00E51D21 /* DropDownMenu_FinalApp.swift */; };
 		3765C7632611930E00E51D21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765C7622611930E00E51D21 /* ContentView.swift */; };
 		3765C7652611930E00E51D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3765C7642611930E00E51D21 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3740D3562627F58B007452AB /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Ext.swift"; path = "../../../DropDownMenu-Starter/DropDownMenu-Starter/Helpers/Color+Ext.swift"; sourceTree = "<group>"; };
+		3740D3592627F5A1007452AB /* SmoothRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmoothRoundedCorners.swift; path = "../../../DropDownMenu-Starter/DropDownMenu-Starter/Helpers/SmoothRoundedCorners.swift"; sourceTree = "<group>"; };
 		3765C75D2611930E00E51D21 /* DropDownMenu-Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DropDownMenu-Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3765C7602611930E00E51D21 /* DropDownMenu_FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu_FinalApp.swift; sourceTree = "<group>"; };
 		3765C7622611930E00E51D21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3740D3522627F515007452AB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3765C7622611930E00E51D21 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3740D3532627F51D007452AB /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		3740D3542627F52A007452AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3740D3592627F5A1007452AB /* SmoothRoundedCorners.swift */,
+				3740D3562627F58B007452AB /* Color+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3740D3552627F531007452AB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3765C7602611930E00E51D21 /* DropDownMenu_FinalApp.swift */,
+				3765C7692611930E00E51D21 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		3765C7542611930E00E51D21 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +89,11 @@
 		3765C75F2611930E00E51D21 /* DropDownMenu-Final */ = {
 			isa = PBXGroup;
 			children = (
-				3765C7602611930E00E51D21 /* DropDownMenu_FinalApp.swift */,
-				3765C7622611930E00E51D21 /* ContentView.swift */,
+				3740D3522627F515007452AB /* Screens */,
+				3740D3532627F51D007452AB /* DropDownMenu */,
+				3740D3542627F52A007452AB /* Helpers */,
+				3740D3552627F531007452AB /* App */,
 				3765C7642611930E00E51D21 /* Assets.xcassets */,
-				3765C7692611930E00E51D21 /* Info.plist */,
 				3765C7662611930E00E51D21 /* Preview Content */,
 			);
 			path = "DropDownMenu-Final";
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3740D35A2627F5A2007452AB /* SmoothRoundedCorners.swift in Sources */,
 				3765C7632611930E00E51D21 /* ContentView.swift in Sources */,
 				3765C7612611930E00E51D21 /* DropDownMenu_FinalApp.swift in Sources */,
+				3740D3572627F58B007452AB /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DropDownMenu-Final/Preview Content\"";
 				DEVELOPMENT_TEAM = D6VB3396MT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "DropDownMenu-Final/Info.plist";
+				INFOPLIST_FILE = "DropDownMenu-Final/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DropDownMenu-Final/Preview Content\"";
 				DEVELOPMENT_TEAM = D6VB3396MT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "DropDownMenu-Final/Info.plist";
+				INFOPLIST_FILE = "DropDownMenu-Final/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
